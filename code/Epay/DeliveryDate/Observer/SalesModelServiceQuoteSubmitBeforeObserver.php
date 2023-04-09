@@ -19,7 +19,7 @@ class SalesModelServiceQuoteSubmitBeforeObserver implements ObserverInterface
     ) {}
 
     /**
-     * Add delivery date in sales_order_item table
+     * Add delivery_date to sales_order_item table
      *
      * @param EventObserver $observer
      * @return void

@@ -4,15 +4,10 @@ namespace Epay\DeliveryDate\ViewModel;
 use Epay\DeliveryDate\Helper\DeliveryDateHelper;
 use Magento\Framework\DataObject;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
-use Magento\Store\Model\ScopeInterface;
 
 class DeliveryDate extends DataObject implements ArgumentInterface
 {
 
-    /**
-     * DeliveryDate constructor.
-     *
-     */
     public function __construct(
         protected DeliveryDateHelper $deliveryDateHelper
     ) {

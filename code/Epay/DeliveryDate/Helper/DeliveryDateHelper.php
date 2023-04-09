@@ -9,9 +9,9 @@ class DeliveryDateHelper extends AbstractHelper
 {
 
     public function __construct(
-        Context $context
+        protected Context $context
     ) {
-        parent::__construct($context);
+        parent::__construct($this->context);
     }
 
     /**

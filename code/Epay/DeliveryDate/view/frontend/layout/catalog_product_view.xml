@@ -12,6 +12,7 @@
                 <argument name="view_model" xsi:type="object">Epay\DeliveryDate\ViewModel\DeliveryDate</argument>
             </arguments>
         </referenceBlock>
+        <!--   For configurable     -->
         <referenceBlock name="product.info.addtocart.additional">
             <action method="setTemplate">
                 <argument name="template" xsi:type="string">Epay_DeliveryDate::catalog/product/view/addtocart.phtml</argument>
