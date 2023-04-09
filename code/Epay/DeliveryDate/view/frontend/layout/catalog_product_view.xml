@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/add_to_cart.css" />
+    </head>
+    <body>
+        <referenceBlock name="product.info.addtocart">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Epay_DeliveryDate::catalog/product/view/addtocart.phtml</argument>
+            </action>
+            <arguments>
+                <argument name="view_model" xsi:type="object">Epay\DeliveryDate\ViewModel\DeliveryDate</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="product.info.addtocart.additional">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Epay_DeliveryDate::catalog/product/view/addtocart.phtml</argument>
+            </action>
+            <arguments>
+                <argument name="view_model" xsi:type="object">Epay\DeliveryDate\ViewModel\DeliveryDate</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

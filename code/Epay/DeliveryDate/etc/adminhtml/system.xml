@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="epay" translate="label" sortOrder="999">
+            <label>epay</label>
+        </tab>
+        <section id="delivery_date" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Delivery Date</label>
+            <tab>epay</tab>
+            <resource>Epay_DeliveryDate::config_epay_deliverydate</resource>
+            <group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>General</label>
+                <field id="enable_delivery_date" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable Delivery Date</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="max_delivery_date" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Max Delivery Date Delay</label>
+                    <validate>required-entry integer</validate>
+                    <comment>Max delivery date delay in days</comment>
+                    <depends>
+                        <field id="*/*/enable_delivery_date">1</field>
+                    </depends>
+                </field>
+                <field id="delivery_date_label" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Delivery Date Label</label>
+                    <comment>Frontend label</comment>
+                    <depends>
+                        <field id="*/*/enable_delivery_date">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

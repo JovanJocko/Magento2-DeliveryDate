@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <delivery_date>
+            <general>
+                <enable_delivery_date/>
+                <max_delivery_date>30</max_delivery_date>
+                <delivery_date_label>Delivery Date</delivery_date_label>
+            </general>
+        </delivery_date>
+    </default>
+</config>

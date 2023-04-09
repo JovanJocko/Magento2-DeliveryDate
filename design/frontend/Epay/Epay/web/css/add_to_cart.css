@@ -1,0 +1,8 @@
+.action.primary.tocart {
+    background-color: #e39048;
+    border: #e39048;
+}
+.action.primary.tocart:hover {
+    background-color: #d16d16;
+    border: #e39048;
+ }
